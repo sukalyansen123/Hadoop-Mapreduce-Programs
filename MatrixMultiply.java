@@ -24,7 +24,7 @@ public class MatrixMultiply {
                 for (int k = 0; k < p; k++) {
                     reducerKey.set(line[1] + "," + k);
                     reducerValue.set("A," + line[2] + "," + line[3]);
-                    context.write(reducerKey, reducerValue);
+                    context.write(reducerKey,reducerValue);
                 }
             } else {
                 for (int i = 0; i < m; i++) {
