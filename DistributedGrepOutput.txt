@@ -1,6 +1,6 @@
 input1.txt	A keyword is very interesting. 
 		
 input2.txt  The keyword is present in the dictionary.
-		        A keyword is a very important word.
+		A keyword is a very important word.
 		
 		
