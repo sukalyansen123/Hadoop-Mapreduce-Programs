@@ -22,3 +22,15 @@ The target files in this case are grepinput1.txt, grepinput2.txt and grepinput3.
 The main (String[] args) receives a keyword in args .
 
 The main goal of this map-reduce program is to print out all the lines that contain this keyword.We need to pass the keyword to the map() function for which we use the Configuration class.
+
+#matrixvector.java
+
+The goal of this program is to multiply a matrix with a vector where the matrix is stored in two separate files matrix.txt and vector in vector.txt.
+
+The matrix is specified as :
+row num,col num,value
+
+And the vector as the values separated by commas in a single line.
+
+The output of the program is in matrixvectorOUTPUT.txt
+
