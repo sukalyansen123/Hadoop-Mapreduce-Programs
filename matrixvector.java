@@ -25,7 +25,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 
 public class matrixvector {
 
-  public static class Map
+ public static class Map
        extends Mapper<Object, Text, Text, Text>{
 
     public void map(Object key, Text value, Context context
