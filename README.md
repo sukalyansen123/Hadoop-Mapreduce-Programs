@@ -34,3 +34,11 @@ And the vector as the values separated by commas in a single line.
 
 The output of the program is in matrixvectorOUTPUT.txt
 
+#MatrixVectorStrip.java
+
+A variant of the above program.This does the same thing with one difference.Here the main goal is to find the Matrix vector product in case the input vector file size is more than the allotted main memory bock size.
+The matrix and vector are divided into equal number of strips and are stored in separate input files where they fit easily.Then instead of a single mapper ,one mapper is used each for a single input file,and all the outputs are fed to a single reducer.
+Here I have used 2 strips each for matrix and vector , which are the files matrix1.txt,matrix2.txt,vector1.txt,vector2.txt. The output is in MatrixVectorStripOutput.txt.
+To get a better insight into the algorithm refer to the following link ,page 32 : http://infolab.stanford.edu/~ullman/mmds/book.pdf
+
+
