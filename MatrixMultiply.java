@@ -39,8 +39,9 @@ public class MatrixMultiply {
     public static class Reduce extends Reducer<Text, Text, Text, Text> {
         public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
             String[] value;
-            int[] a=new int[5];
-	int[] b= new int[5];
+            int n = Integer.parseInt(context.getConfiguration().get("n"));
+            int[] a=new int[n];
+	int[] b= new int[n];
             for (Text val : values) {
                 value = val.toString().split(",");
 
@@ -52,7 +53,7 @@ int row=Integer.parseInt(value[1]);
                    b[row]=Integer.parseInt(value[2]);
                                     }
             }
-            int n = Integer.parseInt(context.getConfiguration().get("n"));
+            
             int result = 0;
                         for (int j = 0; j < n; j++) {
                                result += a[j] * b[j];
